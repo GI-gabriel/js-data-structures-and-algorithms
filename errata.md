@@ -1,4 +1,91 @@
-# Errata for *Book Title*
+# Errata for  [*JavaScript Data Structures and Algorithms*](http://www.apress.com/9781484239872) by Sammie Bae (Apress, 2019).
+
+***
+
+### page 3
+On **page 3**
+
+**Before**:
+```javascript
+function exampleCubic(n) {
+    //...
+    for (var k = j; j < n; j++) {
+    //...
+}
+```
+
+**Corrected**:
+```javascript
+function exampleCubic(n) {
+    //...
+    for (var k = j; k < n; k++) { //Line 6 - Fix: k instead j
+    //...
+}
+```
+
+On **page 3**
+
+**Before**:
+For example, exampleLogarithmic(10) will print...
+
+**Corrected**:
+For example, exampleLogarithmic(100) will print...
+
+***
+
+### page 5
+On **page 5**
+
+**Before**:
+Log of a power rule: $log(nk)$ is...
+
+**Corrected**:
+Log of a power rule: $log(n^k)$ is...
+
+***
+
+### page 7
+On **page 7**
+
+**Before**:
+```javascript
+function (n) {
+    //...
+    for (var i=0; i<5*n; i++) {
+    //...
+}
+```
+
+**Corrected**:
+```javascript
+function (n) {
+    //...
+    for (var j=0; j<5*n; j++) { //Line 5 - Fix: Don't use i again, inside inner loop
+    //...
+}
+```
+
+***
+
+### page 10
+On **EXERCISE 5**
+
+**Before**:
+```javascript
+function someFunction(n) {
+    for (var i=0;i<n;i*2) {
+    //...
+}
+```
+
+**Corrected**:
+```javascript
+function (n) {
+function someFunction(n) {
+    for (var i=1;i<n;i*2) { //Line 3 - Fix: Must start at 1, not 0
+    //...
+}
+```
 
 ***
 
